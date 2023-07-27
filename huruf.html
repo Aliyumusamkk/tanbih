@@ -189,7 +189,7 @@
             }
             .text-box p{
                 color: #fff;
-                font-size: 22px;
+                font-size: 20px;
                 margin-top: -60px;
             }
             #title{
@@ -242,6 +242,60 @@
             line-height: 22px;
             padding: 10px;
         }
+        /* service */
+        
+        .service{
+            text-align: center;
+            padding-top: 50px;
+        }
+        
+        h1{
+            font-size: 35px;
+            font-weight: 600;
+        }
+        p{
+            color: var(--text);
+            font-size:20px;
+            line-height: 22px;
+            padding: 10px;
+        }
+        .row{
+            width: 80%;
+            margin:auto;
+            display: flex;
+            justify-content: space-between;        
+        }
+        .col{
+            flex-basis: 31%;
+            background: #fff;
+            box-shadow: 0px 10px 15px;
+            border-radius: 10px;
+            margin: 3% 3%;
+            padding: 20px 12px;
+            box-sizing: border-box;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        
+        h2{
+            text-align: center;
+            font-weight: 600;
+            color: seagreen;
+            margin: 10px;
+        }
+        @media (max-width: 700px){
+            .row{
+                flex-direction: column;  
+            }
+            #title{
+                margin-top: 10px;
+                font-size: 22px;
+            }
+            .service h1{
+                font-size: 30px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -272,6 +326,27 @@
             <a href="businessabout.html" class="hero-btn">Karin Bayani</a>
         </div>
     </section>
+    <section class="service">
+        <h1>WANI AJI KAKESON KOYAN HURUF?</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Class One (Aji na farko)</h2>
+                <p>A wannan Aji na farko Dalibi zai samu darasi daga Izu biyar (Yusabbihu)na ALQU'ANI har zuwa Izu Daya(Nasi).</p>
+                <a href="class1.html" class="hero-btn2" style="margin-top: 5%">Shiga Darasi</a>
+            </div>
+            <div class="col">
+                <h2>Class Two (Aji na biyu)</h2>
+                <p>Aji na Biyu nanne Dalibi zai fara karatun daga Izu Ashirin har Zuwa Izu Biyar Insha Allah</p>
+                <a href="class2.html" class="hero-btn2">Shiga Darasi</a>
+            </div>
+            <div class="col">
+                <h2>Class Three(Aji Uku)</h2>
+                <p>Dalibinda yake wannan Aji na Uku To Ananne Zai dauko karatu daga hizu sittin (Suratul Baqara) har ya dangana zuwa izu Ashirin.</p>
+                <a href="class3.html" class="hero-btn2" style="margin-top: 15%">Shiga Darasi</a>
+            </div>
+        </div>
+    </section>
+
 
     <section class="footer">
         <h3>Game da Mu</h3>
