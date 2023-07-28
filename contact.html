@@ -32,6 +32,7 @@
             background-size: cover;
             position: relative;
             overflow-y: hidden;
+            margin-bottom: 30px;
         }
         
         nav{
@@ -213,7 +214,9 @@
                 font-size: 20px;
                
             }
-        
+            .active{
+                width: 50%;
+            }
         }
         .footer{
             width: 100%;
@@ -242,6 +245,56 @@
             line-height: 22px;
             padding: 10px;
         }
+        textarea{
+            width: 100%;
+            height: 200px;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 1%;
+        }
+        .contact{
+            width: 80%;
+            height: 60vh;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .name{
+            width: 90%;
+            height: 55vh;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            box-shadow: 0 0 10px;
+            border: 2px solid #fff;
+        }
+        .name input{
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 1%;
+        }
+        button{
+            width: 100%;
+            border: 2px solid #fff;
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: 800;
+            background: var(--sec);
+            height: 40px;
+        }
+    .active{
+        background: var(--footer);
+        overflow: hidden;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+
+
     </style>
 </head>
 <body>
@@ -250,17 +303,17 @@
             
             <div class="navlink" id="navlink">
             <span class="nav-fa"id="hideNav"><img src="images/cancel.png"></span>   
-            <ul class="active">
-                    
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="about.html"><li>About</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
-                    <a href="quran.html"><li>Quran</li></a>
-                    <a href="hadith.html"><li>Hadith</li></a>
-                    <a href="huruf.html"><li>Huruf</li></a>
-                    <a href="login.html"><li>Log in</li></a>
-                    <a href="registrationform.html"><li>Register</li></a>
-                </ul>
+          <ul>  
+                <li class="one"><a href="index.html">Home</a></li>
+                <li class="one"><a href="about.html">About</a></li>
+                <li class="one"><a href="contact.html">Contact</a></li> 
+                <li class="one"><a href="quran.html">Quran</a></li> 
+                <li class="active"><a href="hadith.html">Hadith</a></li>
+                <li class="one"><a href="huruf.html">Huruf</a></li> 
+                <li class="one"><a href="login.html">Log in</a></li>
+                <li class="one"><a href="registrationform.html">Register</a></li> 
+            </ul>
+
             </div>
             
             <h3 id="title">MADARASATUL TAMBIH</h3> 
@@ -273,6 +326,16 @@
         </div>
     </section>
 
+        <div class="contact">
+            <div class="name">
+                <input type="text" name="" id="" placeholder="Enter your Name" required><br>
+                <br>
+                <input type="text" name="" id="" placeholder="Enter your Address" required><br>
+                <br>
+                <textarea name="" id="" placeholder="Idan kanada tambaya ko bayani rubuta" required></textarea><br>
+                <button type="submit">Send</button>
+            </div>
+        </div>
     <section class="footer">
         <h3>Game da Mu</h3>
         <p>Wannan Manhaja Mun kirkiretane Sabida sauwakawa Masu Fara Karatun Addinin Musulunci Daga Matakin Farko<br> Allah Datar damu Duniya da lahira.</p>
