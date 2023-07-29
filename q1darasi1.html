@@ -22,9 +22,6 @@
             font-family: 'Poppins', sans-serif;
             overflow-x: hidden;            
         }
-        body{
-            background: #76aaac;
-        }
     
         .title-box{
             width: 100%;
@@ -47,13 +44,68 @@
             padding: 8px;
             border-radius: 10px;
         }
+        .div-body{
+            width: 90%;
+            height: 100vh;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            padding: 8% 2%;
+           
+        }
+        .vidcard{
+            display: inline-block;
+            margin: 53px;
+            margin-top: 2%;
+            width: 25%;
+            padding: 1%;
+             border-radius: 10px;
+            box-shadow: 0 0 10px;
+        }
+     
+        video{
+          height: 530px;
+          margin: 2%;
+        }
+       
+
+     
+        @media (max-width: 700px){
+            .div-body{
+                width: 90%;
+                height: 100vh;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+                padding: 8% 2%;
+            }
+            .vidcard{
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                height: 60vh;
+                margin: 20% 10%;
+            }
+         
+            video{
+              margin-right: 8px;
+            }
+        
+        }
+     
+
     </style>
 </head>
 <body>
     <header>
         <div class="title-box">
-            <h1 dir="rtl" lang="ar">مدرسة التنبيح</h1>
-        <a href="index.html">HOME</a>
+            <h1 dir="rtl" lang="ar">مدرسة التنبيه</h1>
+            <a href="index.html">HOME</a>
     </header>
+    <!-- <section class="div-body">
+        <div class="vidcard">
+            <video src="class1vid/c1.mp4" controls autoplay></video>
+        </div>     
+    </section> -->
 </body>
 </html>
