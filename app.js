@@ -1,6 +1,15 @@
 var showNave = document.getElementById("showNave");
 var hideNav = document.getElementById("hideNav");
-var navlink = document.getElementById("navlink")
+var navlink = document.getElementById("navlink");
+let loader = document.querySelector(".loader")
+
+window.addEventListener("load", () =>{
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitionend,", () => {
+        document.body.removeChild("loader");
+    })
+})
 
 
 
